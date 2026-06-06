@@ -46,6 +46,18 @@ class Inventory:
             if pygame.Rect(sx, sy, self.slot_size, self.slot_size).collidepoint(mx, my): return i
         return None
 
+    def get_equipped_weapon(self):
+        for slot in self.slots:
+            if slot and slot.get("equipped") and slot.get("type") == "weapon":
+                return slot
+        return None
+
+    def find_item_by_name(self, name):
+        for i, slot in enumerate(self.slots):
+            if slot and slot["name"] == name:
+                return i, slot
+        return None, None
+
     def draw(self, screen, mouse_pos, font):
         if not self.visible: return
         sw, sh = screen.get_size()
