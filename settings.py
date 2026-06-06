@@ -35,6 +35,10 @@ class TileType(Enum):
     ITEM_DAGGER = 20; ITEM_KEY = 21; ITEM_KEY_SILVER = 22; ITEM_KEY_GOLD = 23
     ITEM_KEY_DUNGEON = 24; ITEM_HEALTH_POTION = 25; ITEM_FOOD = 26; ITEM_ARTIFACT = 27
     ITEM_UNLIT_TORCH = 28; ITEM_STAFF = 29
+    ITEM_KEY_RUSTY_2 = 30; ITEM_STAMINA_POTION = 31
+    WALL_BRICK_CRACKED = 40; WALL_STONE_CRACKED = 41; WALL_WOOD_CRACKED = 42
+    STAIRS = 43; FORCE_FIELD = 44
+    PLAYER_SPAWN = 50; ENEMY_GHOST = 60
 
 # --- Asset Paths ---
 WALL_TEXTURE_PATH = "Brick_Wall_64x64.png"
@@ -43,15 +47,18 @@ FLOOR_GRASS_PATH = "Grass_Ground_64x64.png"
 CLOUD_SPRITE_PATH = "clouds_pixel.png"
 TREE_LEAFY_PATHS = ["LeafyTree.png", "LeafyTree_2.png", "LeafyTree_3.png"]
 TREE_DEAD_PATH = "DeadTree.png"
-BUSH_PATH = "bush.png"
+BUSH_PATHS = ["bush.png"]
 ROCK_PATH = "rocks.png"
 SWORD_PATH = "Sword_Icon.png"
 KEY_PATH = "Key_Icon.png"
 KEY_SILVER_PATH = "key_silver.png"
 KEY_GOLD_PATH = "key_gold.png"
 RUSTY_KEY_PATH = "rusty_key_to_dungeon.png"
+RUSTY_KEY_2_PATH = "rusty_key_2.png"
 MANA_POTION_PATH = "mana_potion.png"
 HEALTH_POTION_PATH = "health_potion.png"
+STAMINA_POTION_PATH = "stamina_potion.png"
 ARTIFACT_PATH = "artifact.png"
 FIREBALL_PATH = "fireball.png"
+ENEMY_GHOST_PATH = "ghost_enemy_1.png"
 MAP_DATA_FILE = "map_data.json"
